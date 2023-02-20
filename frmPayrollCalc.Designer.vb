@@ -43,7 +43,7 @@ Partial Class frmPayrollCalc
         Me.picPayroll.Image = CType(resources.GetObject("picPayroll.Image"), System.Drawing.Image)
         Me.picPayroll.Location = New System.Drawing.Point(-1, -1)
         Me.picPayroll.Name = "picPayroll"
-        Me.picPayroll.Size = New System.Drawing.Size(378, 211)
+        Me.picPayroll.Size = New System.Drawing.Size(378, 242)
         Me.picPayroll.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picPayroll.TabIndex = 0
         Me.picPayroll.TabStop = False
@@ -61,7 +61,7 @@ Partial Class frmPayrollCalc
         'lblSubHeading
         '
         Me.lblSubHeading.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSubHeading.Location = New System.Drawing.Point(456, 104)
+        Me.lblSubHeading.Location = New System.Drawing.Point(467, 104)
         Me.lblSubHeading.Name = "lblSubHeading"
         Me.lblSubHeading.Size = New System.Drawing.Size(242, 88)
         Me.lblSubHeading.TabIndex = 2
@@ -70,27 +70,27 @@ Partial Class frmPayrollCalc
         '
         'lblEnterGross
         '
-        Me.lblEnterGross.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblEnterGross.Location = New System.Drawing.Point(177, 253)
+        Me.lblEnterGross.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEnterGross.Location = New System.Drawing.Point(175, 285)
         Me.lblEnterGross.Name = "lblEnterGross"
-        Me.lblEnterGross.Size = New System.Drawing.Size(200, 29)
+        Me.lblEnterGross.Size = New System.Drawing.Size(250, 28)
         Me.lblEnterGross.TabIndex = 3
         Me.lblEnterGross.Text = "Enter Gross Pay: "
         Me.lblEnterGross.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtGrossPay
         '
-        Me.txtGrossPay.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGrossPay.Location = New System.Drawing.Point(462, 253)
+        Me.txtGrossPay.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGrossPay.Location = New System.Drawing.Point(451, 281)
         Me.txtGrossPay.Name = "txtGrossPay"
-        Me.txtGrossPay.Size = New System.Drawing.Size(117, 28)
+        Me.txtGrossPay.Size = New System.Drawing.Size(153, 36)
         Me.txtGrossPay.TabIndex = 4
         Me.txtGrossPay.Text = "888888.88"
         '
         'lblFICA
         '
         Me.lblFICA.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFICA.Location = New System.Drawing.Point(107, 412)
+        Me.lblFICA.Location = New System.Drawing.Point(47, 425)
         Me.lblFICA.Name = "lblFICA"
         Me.lblFICA.Size = New System.Drawing.Size(185, 32)
         Me.lblFICA.TabIndex = 5
@@ -99,7 +99,7 @@ Partial Class frmPayrollCalc
         'lblFed
         '
         Me.lblFed.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFed.Location = New System.Drawing.Point(356, 412)
+        Me.lblFed.Location = New System.Drawing.Point(299, 425)
         Me.lblFed.Name = "lblFed"
         Me.lblFed.Size = New System.Drawing.Size(185, 32)
         Me.lblFed.TabIndex = 6
@@ -108,7 +108,7 @@ Partial Class frmPayrollCalc
         'lblState
         '
         Me.lblState.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblState.Location = New System.Drawing.Point(611, 412)
+        Me.lblState.Location = New System.Drawing.Point(551, 425)
         Me.lblState.Name = "lblState"
         Me.lblState.Size = New System.Drawing.Size(185, 32)
         Me.lblState.TabIndex = 7
@@ -116,10 +116,10 @@ Partial Class frmPayrollCalc
         '
         'lblNetIncome
         '
-        Me.lblNetIncome.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblNetIncome.Location = New System.Drawing.Point(269, 487)
+        Me.lblNetIncome.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetIncome.Location = New System.Drawing.Point(176, 487)
         Me.lblNetIncome.Name = "lblNetIncome"
-        Me.lblNetIncome.Size = New System.Drawing.Size(270, 33)
+        Me.lblNetIncome.Size = New System.Drawing.Size(441, 45)
         Me.lblNetIncome.TabIndex = 8
         Me.lblNetIncome.Text = "Net Paycheck Income: "
         Me.lblNetIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -129,9 +129,9 @@ Partial Class frmPayrollCalc
         Me.btnTaxCalc.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnTaxCalc.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTaxCalc.ForeColor = System.Drawing.Color.White
-        Me.btnTaxCalc.Location = New System.Drawing.Point(92, 330)
+        Me.btnTaxCalc.Location = New System.Drawing.Point(57, 344)
         Me.btnTaxCalc.Name = "btnTaxCalc"
-        Me.btnTaxCalc.Size = New System.Drawing.Size(138, 35)
+        Me.btnTaxCalc.Size = New System.Drawing.Size(138, 45)
         Me.btnTaxCalc.TabIndex = 9
         Me.btnTaxCalc.Text = "Compute Tax"
         Me.btnTaxCalc.UseVisualStyleBackColor = False
@@ -141,9 +141,9 @@ Partial Class frmPayrollCalc
         Me.btnClear.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnClear.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.White
-        Me.btnClear.Location = New System.Drawing.Point(347, 330)
+        Me.btnClear.Location = New System.Drawing.Point(322, 344)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(138, 35)
+        Me.btnClear.Size = New System.Drawing.Size(138, 45)
         Me.btnClear.TabIndex = 10
         Me.btnClear.Text = "Clear"
         Me.btnClear.UseVisualStyleBackColor = False
@@ -153,9 +153,9 @@ Partial Class frmPayrollCalc
         Me.btnExit.BackColor = System.Drawing.Color.DodgerBlue
         Me.btnExit.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
-        Me.btnExit.Location = New System.Drawing.Point(601, 330)
+        Me.btnExit.Location = New System.Drawing.Point(587, 344)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(138, 35)
+        Me.btnExit.Size = New System.Drawing.Size(138, 45)
         Me.btnExit.TabIndex = 11
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = False
@@ -164,7 +164,7 @@ Partial Class frmPayrollCalc
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(792, 540)
+        Me.ClientSize = New System.Drawing.Size(782, 553)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnTaxCalc)
@@ -178,6 +178,7 @@ Partial Class frmPayrollCalc
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.picPayroll)
         Me.Name = "frmPayrollCalc"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Payroll Calculator"
         CType(Me.picPayroll, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
