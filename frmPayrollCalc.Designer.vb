@@ -86,32 +86,31 @@ Partial Class frmPayrollCalc
         Me.txtGrossPay.Name = "txtGrossPay"
         Me.txtGrossPay.Size = New System.Drawing.Size(153, 36)
         Me.txtGrossPay.TabIndex = 4
-        Me.txtGrossPay.Text = "888888.88"
         '
         'lblFICA
         '
         Me.lblFICA.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFICA.Location = New System.Drawing.Point(47, 425)
+        Me.lblFICA.Location = New System.Drawing.Point(22, 425)
         Me.lblFICA.Name = "lblFICA"
-        Me.lblFICA.Size = New System.Drawing.Size(185, 30)
+        Me.lblFICA.Size = New System.Drawing.Size(230, 30)
         Me.lblFICA.TabIndex = 5
         Me.lblFICA.Text = "FICA Tax: "
         '
         'lblFed
         '
         Me.lblFed.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblFed.Location = New System.Drawing.Point(299, 425)
+        Me.lblFed.Location = New System.Drawing.Point(268, 425)
         Me.lblFed.Name = "lblFed"
-        Me.lblFed.Size = New System.Drawing.Size(185, 30)
+        Me.lblFed.Size = New System.Drawing.Size(266, 30)
         Me.lblFed.TabIndex = 6
         Me.lblFed.Text = "Federal Tax: "
         '
         'lblState
         '
         Me.lblState.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblState.Location = New System.Drawing.Point(551, 425)
+        Me.lblState.Location = New System.Drawing.Point(540, 425)
         Me.lblState.Name = "lblState"
-        Me.lblState.Size = New System.Drawing.Size(185, 30)
+        Me.lblState.Size = New System.Drawing.Size(230, 30)
         Me.lblState.TabIndex = 7
         Me.lblState.Text = "State Tax: "
         '
@@ -143,6 +142,7 @@ Partial Class frmPayrollCalc
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnClear.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
         Me.btnClear.FlatAppearance.BorderSize = 2
         Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
