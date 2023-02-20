@@ -50,100 +50,115 @@ Partial Class frmPayrollCalc
         '
         'lblHeading
         '
-        Me.lblHeading.AutoSize = True
-        Me.lblHeading.Location = New System.Drawing.Point(521, 36)
+        Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblHeading.Location = New System.Drawing.Point(396, 29)
         Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblHeading.Size = New System.Drawing.Size(384, 57)
         Me.lblHeading.TabIndex = 1
-        Me.lblHeading.Text = "Label1"
+        Me.lblHeading.Text = "Payroll Calculator"
+        Me.lblHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblSubHeading
         '
-        Me.lblSubHeading.AutoSize = True
-        Me.lblSubHeading.Location = New System.Drawing.Point(521, 138)
+        Me.lblSubHeading.Font = New System.Drawing.Font("Cooper Black", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSubHeading.Location = New System.Drawing.Point(456, 104)
         Me.lblSubHeading.Name = "lblSubHeading"
-        Me.lblSubHeading.Size = New System.Drawing.Size(51, 17)
+        Me.lblSubHeading.Size = New System.Drawing.Size(242, 88)
         Me.lblSubHeading.TabIndex = 2
-        Me.lblSubHeading.Text = "Label2"
+        Me.lblSubHeading.Text = "Paycheck" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Calculation"
+        Me.lblSubHeading.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lblEnterGross
         '
-        Me.lblEnterGross.AutoSize = True
-        Me.lblEnterGross.Location = New System.Drawing.Point(214, 241)
+        Me.lblEnterGross.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblEnterGross.Location = New System.Drawing.Point(177, 253)
         Me.lblEnterGross.Name = "lblEnterGross"
-        Me.lblEnterGross.Size = New System.Drawing.Size(51, 17)
+        Me.lblEnterGross.Size = New System.Drawing.Size(200, 29)
         Me.lblEnterGross.TabIndex = 3
-        Me.lblEnterGross.Text = "Label3"
+        Me.lblEnterGross.Text = "Enter Gross Pay: "
+        Me.lblEnterGross.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'txtGrossPay
         '
-        Me.txtGrossPay.Location = New System.Drawing.Point(462, 241)
+        Me.txtGrossPay.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtGrossPay.Location = New System.Drawing.Point(462, 253)
         Me.txtGrossPay.Name = "txtGrossPay"
-        Me.txtGrossPay.Size = New System.Drawing.Size(100, 22)
+        Me.txtGrossPay.Size = New System.Drawing.Size(117, 28)
         Me.txtGrossPay.TabIndex = 4
+        Me.txtGrossPay.Text = "888888.88"
         '
         'lblFICA
         '
-        Me.lblFICA.AutoSize = True
+        Me.lblFICA.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFICA.Location = New System.Drawing.Point(107, 412)
         Me.lblFICA.Name = "lblFICA"
-        Me.lblFICA.Size = New System.Drawing.Size(51, 17)
+        Me.lblFICA.Size = New System.Drawing.Size(185, 32)
         Me.lblFICA.TabIndex = 5
-        Me.lblFICA.Text = "Label4"
+        Me.lblFICA.Text = "FICA Tax: "
         '
         'lblFed
         '
-        Me.lblFed.AutoSize = True
+        Me.lblFed.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFed.Location = New System.Drawing.Point(356, 412)
         Me.lblFed.Name = "lblFed"
-        Me.lblFed.Size = New System.Drawing.Size(51, 17)
+        Me.lblFed.Size = New System.Drawing.Size(185, 32)
         Me.lblFed.TabIndex = 6
-        Me.lblFed.Text = "Label5"
+        Me.lblFed.Text = "Federal Tax: "
         '
         'lblState
         '
-        Me.lblState.AutoSize = True
+        Me.lblState.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblState.Location = New System.Drawing.Point(611, 412)
         Me.lblState.Name = "lblState"
-        Me.lblState.Size = New System.Drawing.Size(51, 17)
+        Me.lblState.Size = New System.Drawing.Size(185, 32)
         Me.lblState.TabIndex = 7
-        Me.lblState.Text = "Label6"
+        Me.lblState.Text = "State Tax: "
         '
         'lblNetIncome
         '
-        Me.lblNetIncome.AutoSize = True
-        Me.lblNetIncome.Location = New System.Drawing.Point(326, 487)
+        Me.lblNetIncome.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNetIncome.Location = New System.Drawing.Point(269, 487)
         Me.lblNetIncome.Name = "lblNetIncome"
-        Me.lblNetIncome.Size = New System.Drawing.Size(51, 17)
+        Me.lblNetIncome.Size = New System.Drawing.Size(270, 33)
         Me.lblNetIncome.TabIndex = 8
-        Me.lblNetIncome.Text = "Label7"
+        Me.lblNetIncome.Text = "Net Paycheck Income: "
+        Me.lblNetIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'btnTaxCalc
         '
+        Me.btnTaxCalc.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnTaxCalc.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTaxCalc.ForeColor = System.Drawing.Color.White
         Me.btnTaxCalc.Location = New System.Drawing.Point(92, 330)
         Me.btnTaxCalc.Name = "btnTaxCalc"
-        Me.btnTaxCalc.Size = New System.Drawing.Size(75, 23)
+        Me.btnTaxCalc.Size = New System.Drawing.Size(138, 35)
         Me.btnTaxCalc.TabIndex = 9
-        Me.btnTaxCalc.Text = "Button1"
-        Me.btnTaxCalc.UseVisualStyleBackColor = True
+        Me.btnTaxCalc.Text = "Compute Tax"
+        Me.btnTaxCalc.UseVisualStyleBackColor = False
         '
         'btnClear
         '
+        Me.btnClear.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnClear.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(347, 330)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(75, 23)
+        Me.btnClear.Size = New System.Drawing.Size(138, 35)
         Me.btnClear.TabIndex = 10
-        Me.btnClear.Text = "Button2"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.Text = "Clear"
+        Me.btnClear.UseVisualStyleBackColor = False
         '
         'btnExit
         '
+        Me.btnExit.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btnExit.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.ForeColor = System.Drawing.Color.White
         Me.btnExit.Location = New System.Drawing.Point(601, 330)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(138, 35)
         Me.btnExit.TabIndex = 11
-        Me.btnExit.Text = "Button3"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = False
         '
         'frmPayrollCalc
         '
