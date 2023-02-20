@@ -50,6 +50,7 @@ Partial Class frmPayrollCalc
         '
         'lblHeading
         '
+        Me.lblHeading.BackColor = System.Drawing.Color.Transparent
         Me.lblHeading.Font = New System.Drawing.Font("Cooper Black", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblHeading.Location = New System.Drawing.Point(396, 29)
         Me.lblHeading.Name = "lblHeading"
@@ -73,7 +74,7 @@ Partial Class frmPayrollCalc
         Me.lblEnterGross.Font = New System.Drawing.Font("Tahoma", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblEnterGross.Location = New System.Drawing.Point(175, 285)
         Me.lblEnterGross.Name = "lblEnterGross"
-        Me.lblEnterGross.Size = New System.Drawing.Size(250, 28)
+        Me.lblEnterGross.Size = New System.Drawing.Size(250, 30)
         Me.lblEnterGross.TabIndex = 3
         Me.lblEnterGross.Text = "Enter Gross Pay: "
         Me.lblEnterGross.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -92,7 +93,7 @@ Partial Class frmPayrollCalc
         Me.lblFICA.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFICA.Location = New System.Drawing.Point(47, 425)
         Me.lblFICA.Name = "lblFICA"
-        Me.lblFICA.Size = New System.Drawing.Size(185, 32)
+        Me.lblFICA.Size = New System.Drawing.Size(185, 30)
         Me.lblFICA.TabIndex = 5
         Me.lblFICA.Text = "FICA Tax: "
         '
@@ -101,7 +102,7 @@ Partial Class frmPayrollCalc
         Me.lblFed.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblFed.Location = New System.Drawing.Point(299, 425)
         Me.lblFed.Name = "lblFed"
-        Me.lblFed.Size = New System.Drawing.Size(185, 32)
+        Me.lblFed.Size = New System.Drawing.Size(185, 30)
         Me.lblFed.TabIndex = 6
         Me.lblFed.Text = "Federal Tax: "
         '
@@ -110,7 +111,7 @@ Partial Class frmPayrollCalc
         Me.lblState.Font = New System.Drawing.Font("Tahoma", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblState.Location = New System.Drawing.Point(551, 425)
         Me.lblState.Name = "lblState"
-        Me.lblState.Size = New System.Drawing.Size(185, 32)
+        Me.lblState.Size = New System.Drawing.Size(185, 30)
         Me.lblState.TabIndex = 7
         Me.lblState.Text = "State Tax: "
         '
@@ -119,7 +120,7 @@ Partial Class frmPayrollCalc
         Me.lblNetIncome.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblNetIncome.Location = New System.Drawing.Point(176, 487)
         Me.lblNetIncome.Name = "lblNetIncome"
-        Me.lblNetIncome.Size = New System.Drawing.Size(441, 45)
+        Me.lblNetIncome.Size = New System.Drawing.Size(440, 30)
         Me.lblNetIncome.TabIndex = 8
         Me.lblNetIncome.Text = "Net Paycheck Income: "
         Me.lblNetIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -127,7 +128,10 @@ Partial Class frmPayrollCalc
         'btnTaxCalc
         '
         Me.btnTaxCalc.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btnTaxCalc.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTaxCalc.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.btnTaxCalc.FlatAppearance.BorderSize = 2
+        Me.btnTaxCalc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnTaxCalc.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnTaxCalc.ForeColor = System.Drawing.Color.White
         Me.btnTaxCalc.Location = New System.Drawing.Point(57, 344)
         Me.btnTaxCalc.Name = "btnTaxCalc"
@@ -139,7 +143,10 @@ Partial Class frmPayrollCalc
         'btnClear
         '
         Me.btnClear.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btnClear.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnClear.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.btnClear.FlatAppearance.BorderSize = 2
+        Me.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnClear.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClear.ForeColor = System.Drawing.Color.White
         Me.btnClear.Location = New System.Drawing.Point(322, 344)
         Me.btnClear.Name = "btnClear"
@@ -151,7 +158,10 @@ Partial Class frmPayrollCalc
         'btnExit
         '
         Me.btnExit.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btnExit.Font = New System.Drawing.Font("Tahoma", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.FlatAppearance.BorderColor = System.Drawing.Color.LightGray
+        Me.btnExit.FlatAppearance.BorderSize = 2
+        Me.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnExit.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.ForeColor = System.Drawing.Color.White
         Me.btnExit.Location = New System.Drawing.Point(587, 344)
         Me.btnExit.Name = "btnExit"
@@ -162,8 +172,11 @@ Partial Class frmPayrollCalc
         '
         'frmPayrollCalc
         '
+        Me.AcceptButton = Me.btnTaxCalc
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.CancelButton = Me.btnClear
         Me.ClientSize = New System.Drawing.Size(782, 553)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnClear)
