@@ -20,30 +20,30 @@ Public Class frmPayrollCalc
         'Displays net income
 
         'Declare constants: FICA, Federal, and State tax rates:
-        Const cdecFICAtax As Decimal = 0.0765D
-        Const cdecFedTax As Decimal = 0.22D
-        Const cdecStateTax As Decimal = 0.04D
+        Const cdecFICA As Decimal = 0.0765D
+        Const cdecFed As Decimal = 0.22D
+        Const cdecState As Decimal = 0.04D
 
-        Dim strGrossPay As String 'gross pay as string from input
-        Dim decGrossPay As Decimal 'gross pay converted to dec
+        Dim strIncome As String 'gross pay as string from input
+        Dim decIncome As Decimal 'gross pay converted to dec
         Dim decFICA As Decimal 'calculated FICA tax
         Dim decFederal As Decimal 'calculated federal tax
         Dim decState As Decimal 'calculated state tax
         Dim decNet As Decimal 'calculated net income
 
         'get gross pay from input & convert to int
-        strGrossPay = txtGrossPay.Text
+        strIncome = txtGrossPay.Text
 
         Try
-            decGrossPay = Convert.ToDecimal(strGrossPay)
+            decIncome = Convert.ToDecimal(strIncome)
 
             'calc taxes:
-            decFICA = decGrossPay * cdecFICAtax
-            decFederal = decGrossPay * cdecFedTax
-            decState = decGrossPay * cdecStateTax
+            decFICA = decIncome * cdecFICA
+            decFederal = decIncome * cdecFed
+            decState = decIncome * cdecState
 
             'subtract taxes from gross pay
-            decNet = decGrossPay - decFICA - decFederal - decState
+            decNet = decIncome - decFICA - decFederal - decState
 
             'display taxes and net income
             lblFICA.Text = "FICA Tax: " & decFICA.ToString("C2")
